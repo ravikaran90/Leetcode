@@ -1,6 +1,6 @@
 class Solution:
     def valid_par(self,string):
-        diction=dict(('()','{}','[]'))
+        diction={'(':')','{':'}','[':']'}
         stack=[]
         for c in string:
             if c in '({[':
@@ -13,7 +13,7 @@ class Solution:
             return True
         
 def main():
-    string="(({[}])]"
+    string="[(([{]}))]"
     obj=Solution()
     res=obj.valid_par(string)
     print("Result:",res)
