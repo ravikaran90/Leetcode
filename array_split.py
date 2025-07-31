@@ -6,7 +6,7 @@ class Solution:
             prefix.append(nums[i]+prefix[len(prefix)-1])
         #return prefix
         #[10, 14,  6, 13]
-        for i in range(0,len(prefix)):
+        for i in range(len(prefix)-1):
             left=prefix[i]
             right=prefix[-1]-prefix[i]
             if left>=right:
@@ -18,8 +18,8 @@ class Solution:
         #to the sum of the second section
 
 def main():
-    nums=[2,3,1,0]
-    #nums=[10,  4, -8,  7]
+    #nums=[2,3,1,0]
+    nums=[10,  4, -8,  7]
     #ps-=[10, 14,  6, 13]
     #.   [10][4,-8,7] | [10,4][-8,7] | [10,4,-8][7]
 
