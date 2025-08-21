@@ -5,18 +5,17 @@ class Node:
 
 class Solution: 
     def display(self,head):
-        current=head
-        while current:
-            print("Value:",current.val)
-            current=current.next
-
+        while head:
+            print("Value:",head.val)
+            head=head.next
+    
     def middleoflinkedlist(self,head):
         slow=fast=head
         while fast and fast.next:
             slow=slow.next
             fast=fast.next.next
         return slow.val
-    
+
     def ifcycle(self,head):
         slow=fast=head
         while fast and fast.next:
@@ -27,8 +26,8 @@ class Solution:
         return False
 
     def reversal(self,head):
-        current=head
         prev=None
+        current=head
         while current:
             temp=current.next
             current.next=prev
@@ -37,12 +36,11 @@ class Solution:
         return prev
 
 def main():
-    head=Node(100)
-    head.next=Node(200)
-    head.next.next=Node(300)
-    head.next.next.next=Node(400)
-    head.next.next.next.next=Node(500)
-    head.next.next.next.next.next=Node(600)
+    head=Node(1000)
+    head.next=Node(2000)
+    head.next.next=Node(3000)
+    head.next.next.next=Node(4000)
+    head.next.next.next.next=Node(5000)
     obj=Solution()
     obj.display(head)
     mid=obj.middleoflinkedlist(head)
