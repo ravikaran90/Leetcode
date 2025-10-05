@@ -9,8 +9,6 @@ class Solution:
                 return False
             elif diction[stack.pop()]!=c:
                 return False
-                #elif 
-                #return False
         return len(stack)==0
 
 def main():
