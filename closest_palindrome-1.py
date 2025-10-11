@@ -10,16 +10,16 @@ class Solution:
             self.half_to_palindrome(first_half,is_even)
         )
         possible_solutions.append(
-            self.half_to_palindrome(first_half+1,is_even)
+            self.half_to_palindrome(first_half-1,is_even)
         )
         possible_solutions.append(
-            self.half_to_palindrome(first_half-1,is_even)
+            self.half_to_palindrome(first_half+1,is_even)
         )
         possible_solutions.append(
             10**(len_n-1)-1
         )
         possible_solutions.append(
-            10**len(n)+1
+            10*len(n)+1
         )
 
         diff=float("inf")
@@ -29,12 +29,12 @@ class Solution:
         for candidate in possible_solutions:
             if candidate==n_int:
                 continue
-            if abs(candidate-n_int)<diff:
+            elif abs(candidate-n_int)<diff:
                 diff=abs(candidate-n_int)
                 res=candidate
-            if abs(candidate-n_int)==diff:
+            elif abs(candidate-n_int)==diff:
                 res=min(res,candidate)
-        
+
         return str(res)
 
     def half_to_palindrome(self,num,is_even):
@@ -47,7 +47,8 @@ class Solution:
         return res
 
 def main():
-    n="1500"
+    n="222"
+    #Bug if number like 222 is given, it returns 212, needs to be sorted out
     obj=Solution()
     res=obj.closest_palindrome(n)
     print("Result:",res)
