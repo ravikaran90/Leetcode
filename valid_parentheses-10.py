@@ -6,14 +6,14 @@ class Solution:
             if c in "({[":
                 stack.append(c)
             else:
-                if diction[stack.pop()]!=c:
+                if len(stack)==0:
                     return False
-                elif len(stack)==0:
+                elif diction[stack.pop()]!=c:
                     return False
-        return True
+        return len(stack)==0
 
 def main():
-    string="({[]})"
+    string="({[)]})"
     obj=Solution()
     res=obj.valid_parentheses(string)
     print("Result:",res)
