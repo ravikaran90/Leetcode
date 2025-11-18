@@ -13,14 +13,15 @@ class Solution:
         q.append(root)
         
         while q:
-            node=q.popleft()
             level=[]
-            if node:
-                level.append(node.val)
-                if node.left:
-                    q.append(node.left)
-                if node.right:
-                    q.append(node.right)
+            for i in range(len(q)):
+                node=q.popleft()
+                if node:
+                    level.append(node.val)
+                    if node.left:
+                        q.append(node.left)
+                    if node.right:
+                        q.append(node.right)
             res.append(level)
         return res
 
