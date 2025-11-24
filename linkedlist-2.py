@@ -5,10 +5,10 @@ class Node:
 
 class Solution():
     def display(self,head):
-        new=head
-        while new:
-            print(new.val)
-            new=new.next
+        current=head
+        while current:
+            print(current.val)
+            current=current.next
 
     def mid(self,head):
         slow=fast=head
@@ -26,13 +26,15 @@ class Solution():
                 return True
         return False 
 
-    #def reversal(self,head):
-    #    temp=None
-    #    while head:
-    #        temp=prev
-    #        prev=head.next
-    #        head.next=temp
-    #    return prev
+    def reversal(self,head):
+        prev=None
+        current=head
+        while current:
+            temp=current.next
+            current.next=prev
+            prev=current
+            current=temp
+        return prev
 
 def main():
     head=Node(100)
@@ -46,8 +48,8 @@ def main():
     print("Middle Value of the Linked List:",mi)
     ifc=obj.ifcycle(head)
     print("If Cycle Exists:",ifc)
-    #newhead=obj.reversal(head)
-    #obj.display(newhead)
+    newhead=obj.reversal(head)
+    obj.display(newhead)
 
 if __name__=="__main__":
     main()
