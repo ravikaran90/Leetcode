@@ -13,6 +13,7 @@ class Solution:
 def main():
     nums=[2,4,12,16,23,32,45,50]
     obj=Solution()
+    
     res=obj.two_sum(nums,28)
     print("Top K Frequent:",res)
 
