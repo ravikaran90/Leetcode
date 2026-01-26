@@ -15,11 +15,12 @@ class Solution:
         while q:
             level=[]
             node=q.popleft()
-            level.append(node.val)
-            if node.left:
-                q.append(node.left)
-            if node.right:
-                q.append(node.right)
+            while node:
+                level.append(node.val)
+                if node.left:
+                    q.append(node.left)
+                if node.right:
+                    q.append(node.right)
             res.append(level)
         return res
     
