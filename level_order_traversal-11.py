@@ -10,12 +10,11 @@ class Solution:
     def level_order_traversal(self,root):
         res=[]
         q=deque([root])
-        #q.append(root)
         
         while q:
             level=[]
-            node=q.popleft()
-            while node:
+            for i in range(len(q)):
+                node=q.popleft()
                 level.append(node.val)
                 if node.left:
                     q.append(node.left)
