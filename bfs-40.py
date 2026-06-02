@@ -3,6 +3,8 @@ class Solution:
 
 def main():
   root=Node(250)
+  root.left=Node(300)
+  root.right=Node(50)
   obj=Solution()
   res=obj.bfs(root)
 
