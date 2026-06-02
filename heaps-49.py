@@ -1,3 +1,5 @@
+import heapify
+
 def heaps(arr):
 
 def main():
