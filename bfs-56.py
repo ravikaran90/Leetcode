@@ -2,6 +2,7 @@ def bfs(root):
   
   
 def main():
+  root=Node(67)
   res=bfs(root)
   print("Result:",res)
 
