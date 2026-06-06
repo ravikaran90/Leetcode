@@ -1,7 +1,8 @@
 def bfs(self,root):
 
 def main():
-  obj=bfs(root)
+  res=bfs(root)
+  
 
 if __name__==__main__:
   main()
