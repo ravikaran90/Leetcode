@@ -1,3 +1,9 @@
+class Node:
+  def __init__(self,val,left=None,right=None):
+    self.left=left
+    self.val=val
+    self.right=right
+
 def bfs(root):
 
 def main():
