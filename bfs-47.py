@@ -1,6 +1,9 @@
 class Solution:
-  def bfs(self,root):
 
+  
+  def bfs(self,root):
+        if root:
+    return
 
 def main():
   res=bfs(root)
