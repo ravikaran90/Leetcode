@@ -5,6 +5,8 @@ class Node:
     self.right=right
 
 def bfs(root):
+  if root:
+    return
 
 def main():
   res=bfs(root)
