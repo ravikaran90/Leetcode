@@ -4,9 +4,11 @@ class Node:
     self.val=val
     self.right=right
 
-def bfs()
+def bfs():
+  
 
 def main():
+  res=bfs(root)
 
 if __name__==__main__:
   main()
