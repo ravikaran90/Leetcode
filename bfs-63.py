@@ -3,6 +3,9 @@
     self.left=left
     self.right=right
 
+def bfs(root):
+  res=[]
+
 def main():
   res=bfs(root)
   print("Result:",res)
