@@ -3,10 +3,10 @@ class Node:
     self.left=left
     self.val=val
     self.right=right
-
+c
 def bfs(root):
-  if root:
-    return
+  res=[]
+  
 
 def main():
   res=bfs(root)
