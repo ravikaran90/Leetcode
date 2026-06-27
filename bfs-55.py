@@ -19,6 +19,7 @@ def bfs(root):
         q.append(node.right)
       level.append(q)
   res.append(level)
+  return res
 
 def main():
   res=bfs(root)
