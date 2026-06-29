@@ -13,12 +13,12 @@ def bfs(root):
     level=[]
     for i in range(len(q)):
       node=q.popleft()
+      level.append(node.val)
       if node.left:
         q.append(node.left)
       if node.right:
         q.append(node.right)
-    level.append(q)
-  res.append(level)
+    res.append(level)
   return res
 
 def main():
