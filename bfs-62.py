@@ -3,3 +3,8 @@ class Node:
         self.val=val
         self.left=left
         self.right=right
+
+class Solution:
+    def bfs(self,root):
+
+        
