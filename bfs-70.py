@@ -1,4 +1,10 @@
-def bfs()
+from collections import Countet
+
+def bfs():
+  res=[]
+  q=deque([root])
+  while q:
+    node=q.popleft()
 
 def main():
 
