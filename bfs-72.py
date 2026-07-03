@@ -4,7 +4,11 @@ class Node:
     self.left=left
     self.right=right
 
-def bfs()
+def bfs():
+  res=[]
+  q=deque([root])
+  while q:
+    
 
 def main():
 
