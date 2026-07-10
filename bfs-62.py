@@ -7,4 +7,9 @@ class Node:
 class Solution:
     def bfs(self,root):
 
+def main():
+
+if __name__==__main__:
+    main()
+
         
