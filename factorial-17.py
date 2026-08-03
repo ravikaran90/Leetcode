@@ -2,7 +2,8 @@ class Solution:
   def factorial(n):
     if n<1:
       return
-    else factorial(n)*factorial(n-1)
+    else:
+    factorial(n)*factorial(n-1)
 
 def main():
   obj=Solution()
