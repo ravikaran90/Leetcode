@@ -1,4 +1,6 @@
-def factorial(n)
+def factorial(n):
+  if n<1:
+    return
 
 def main():
   res=factorial(n)
