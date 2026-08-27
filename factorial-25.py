@@ -1,1 +1,1 @@
-dwf factorial(n)
+def factorial(n)
