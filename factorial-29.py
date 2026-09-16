@@ -1,3 +1,3 @@
 def factorial(n):
 
-dwf main():
+def main():
