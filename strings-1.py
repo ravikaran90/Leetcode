@@ -1,1 +1,1 @@
-
+def strings(str)
