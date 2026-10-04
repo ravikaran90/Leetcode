@@ -8,5 +8,5 @@ def main():
   res=factorial(15)
   print("Result:,res)
 
-if __name---==__main__:
+if __name__=="__main__":
   main()
