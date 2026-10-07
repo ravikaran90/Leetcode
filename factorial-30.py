@@ -6,7 +6,7 @@ def factorial(n):
 
 def main():
   res=factorial(15)
-  print("Result:,res)
+  print("Result:",res)
 
 if __name__=="__main__":
   main()
