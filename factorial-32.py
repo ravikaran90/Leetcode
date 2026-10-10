@@ -4,7 +4,8 @@ def factorial(n):
   else:
     factorial(n)*factorial(n-1)
 
-def main()
+def main():
+  res=factorial(n)
 
 if __name__=="__main__":
   main()
