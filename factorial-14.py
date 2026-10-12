@@ -1,3 +1,4 @@
 def factorial(n)
 
-def main()
+def main():
+  res=factorial(n)
