@@ -1,4 +1,5 @@
 def factorial(n):
+  fact
 
 def main():
   res=factorial(n)
