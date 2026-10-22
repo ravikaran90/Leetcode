@@ -1,4 +1,4 @@
-def factorial (n)
+def factorial(n):
 
 def main():
 
