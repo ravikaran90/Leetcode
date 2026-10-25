@@ -1,6 +1,8 @@
 def factorial(nums):
-  if n<1:
+  if n<0:
     return
+  else:
+    return n*factorial(n-1)
 
 
 def main():
