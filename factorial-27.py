@@ -1,5 +1,5 @@
 def factorial(n):
-  if n<1:
+  if n<0:
     return
   else:
     factorial(n-1)*factorial(n)
