@@ -2,11 +2,11 @@ def factorial(n):
   if n<0:
     return
   else:
-    reruen n*factorial(n-1)
+    return n*factorial(n-1)
 
 def main():
   res=factorial(n)
   print("Result:",res)
 
-if __name__==__main__:
+if __name__=="__main__":
   main()
