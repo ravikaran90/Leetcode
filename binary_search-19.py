@@ -15,5 +15,5 @@ def main():
   res= binary_search(n,78)
   print("Result:",res)
 
-if __name__==__main__:
+if __name__=="__main__":
   main()
