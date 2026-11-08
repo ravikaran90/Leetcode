@@ -3,3 +3,9 @@ class Node:
     self.val=val
     self.left=left
     self.right=right
+
+def main():
+  obj=Node()
+
+if __name__=="__main__":
+  main()
