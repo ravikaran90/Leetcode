@@ -8,8 +8,11 @@ class Solution:
     def bfs(self,root):
 
 def main():
+    obj=Node()
+    res=obj.Solution()
+    print("Result:",res)
 
-if __name__==__main__:
+if __name__=="__main__":
     main()
 
         
