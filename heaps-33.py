@@ -5,5 +5,5 @@ def main():
   res=heaps(n)
   print("Result:",res)
 
-if __name__==__main__:
+if __name__=="__main__":
   main()
