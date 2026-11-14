@@ -1,3 +1,4 @@
+class Solution:
 def factorial(n):
   if n<0:
     return
@@ -5,7 +6,8 @@ def factorial(n):
     return (n-1)*factorai(n)
 
 def main():
-  res=factorial(n)
+  obj=Solution()
+  res=obj.factorial(n)
   print("Result:",res)
 
 if __name__=="__main__":
