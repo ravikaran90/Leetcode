@@ -12,5 +12,5 @@ def main():
   obj=Solution()
   obj.heaps(n)
 
-if __name__==__main__:
+if __name__=="__main__":
   main()
