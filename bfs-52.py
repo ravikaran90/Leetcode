@@ -3,3 +3,11 @@ class Node:
     self.val=val
     self.left=left
     self.right=right
+
+
+def bfs(root)
+
+if __name__=="__main__":
+    main()
+
+
