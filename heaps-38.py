@@ -1,3 +1,5 @@
+import heapq
+
 class Solution:
   def heaps(self,n):
 
