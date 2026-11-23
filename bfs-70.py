@@ -1,4 +1,4 @@
-from collections import Countet
+from collections import Counter
 
 def bfs():
   res=[]
@@ -8,5 +8,5 @@ def bfs():
 
 def main():
 
-if __name__==__main__:
+if __name__=="__main__":
   main()
