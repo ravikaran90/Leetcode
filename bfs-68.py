@@ -22,5 +22,5 @@ def bfs():
 def main():
   res=bfs(root)
 
-if __name__==__main__:
+if __name__=="__main__":
   main()
