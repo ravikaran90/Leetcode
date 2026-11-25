@@ -3,7 +3,7 @@ def heaps(n):
 def main():
 
     res=heaps(n)
-    print("Rersult:",res)
+    print("Result:",res)
 
-if __name__==__main__:
+if __name__=="__main__":
     main()
