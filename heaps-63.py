@@ -1,3 +1,5 @@
+import heapify
+
 def heaps(nums):
 
 def main():
@@ -5,5 +7,5 @@ def main():
   res=heaps(nums)
   print("Result:",res)
 
-if __name__==__main__:
+if __name__=="__main__":
   main()
